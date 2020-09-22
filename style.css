@@ -1,0 +1,269 @@
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #201e1e;
+    font-family: arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    /* border: 1px solid white; */
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 10px;
+}
+
+#navbar a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#navbar a:visited {
+    color: #79665f;
+}
+
+#navbar-left {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar-left ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+
+#navbar-right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar-img a {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-th {
+    color: #7d838a;
+    font-size: 1.2rem;
+}
+
+.fa-th:hover {
+    color: #c7c6c6;
+}
+
+#account-logo {
+    border-radius: 5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #92a8ea;
+}
+
+#main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6.5rem;
+    margin-bottom: auto;
+}
+
+@media (max-height: 600px) {
+    #main-div {
+        margin-top: 0;
+        transition: margin-top 0.4s ease, height 0.4s ease;
+    }
+}
+
+@media (min-height: 550px) {
+    #main-div {
+        margin-top: 6.5rem;
+    }
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#search-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-bar {
+    border-radius: 3rem;
+    background-color: black;
+    min-width: 500px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+
+@media (max-width: 650px) {
+    #search-bar {
+        min-width: 90vw;
+    }
+}
+
+#search-bar:hover {
+    box-shadow: 0 1px 6px 0 rgba(139, 134, 134, 0.664);
+    border-color: rgb(139, 134, 134);
+}
+
+#search-bar:focus-within {
+    box-shadow: 0 1px 6px 0 rgba(139, 134, 134, 0.664);
+    border-color: rgb(139, 134, 134);
+}
+
+.search-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.fa-search {
+    display: flex;
+    flex-direction: row;
+    color: #c7c6c6;
+}
+
+#search-input {
+    width: fit-content;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: #c5c5c5;
+    font-size: 16px;
+}
+
+.fa-microphone {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    color: #c7c6c6;
+}
+
+#search-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto 30px auto;
+}
+
+.btn {
+    background-color: rgb(14, 13, 13);
+    color: rgb(145, 145, 145);
+    border-radius: 4px;
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid transparent;
+    font-size: 14px;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 1px #4d4848;
+    border: 1px solid #333030;
+    color: rgb(196, 196, 196);
+}
+
+#lang-div {
+    font-size: 0.8rem;
+    color: rgb(145, 145, 145);
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #2c2c2c;
+    font-size: 14px;
+    margin-top: 70px;
+}
+
+#country {
+    display: flex;
+    color: rgb(145, 145, 145);
+    border-top: 1px solid #201e1e;
+    border-bottom: 1px solid #201e1e;
+}
+
+#country span {
+    margin: 10px auto 10px 30px;
+}
+
+#fbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media (max-width: 800px) {
+    #fbar {
+        flex-direction: column;
+    }
+}
+
+#fbar li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#fbar-left {
+    display: flex;
+    flex-direction: row;
+}
+
+#fbar-right {
+    display: flex;
+    flex-direction: row;
+}
